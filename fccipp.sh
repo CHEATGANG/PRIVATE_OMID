@@ -245,8 +245,8 @@ endipresult() {
 		"tag": "select",
 		"outbounds": [
 			"auto",
-			"IP->Iran, TELEGRAM : @BTOMIDOX",
-			"IP->Main, TELEGRAM : @BTOMIDOX"
+			"IP->Iran, TEL : @BTOMIDOX",
+			"IP->Main, TEL : @BTOMIDOX"
 		],
 		"default": "auto"
 		},
@@ -254,15 +254,15 @@ endipresult() {
 		"type": "urltest",
 		"tag": "auto",
 		"outbounds": [
-			"IP->Iran, TELEGRAM : @BTOMIDOX",
-			"IP->Main, TELEGRAM : @BTOMIDOX"
+			"IP->Iran, TEL : @BTOMIDOX",
+			"IP->Main, TEL : @BTOMIDOX"
 		],
 		"url": "http://cp.cloudflare.com/",
 		"interval": "10m0s"
 		},
 		{
 		"type": "wireguard",
-		"tag": "IP->Iran, TELEGRAM : @BTOMIDOX",
+		"tag": "IP->Iran, TEL : @BTOMIDOX",
 		"local_address": [
 			"172.16.0.2/32",
 			"'$publicKey'"
@@ -277,8 +277,8 @@ endipresult() {
 		},
 		{
 		"type": "wireguard",
-		"tag": "IP->Main, TELEGRAM : @BTOMIDOX",
-		"detour": "IP->Iran, TELEGRAM : @BTOMIDOX",
+		"tag": "IP->Main, TEL : @BTOMIDOX",
+		"detour": "IP->Iran, TEL : @BTOMIDOX",
 		"local_address": [
 			"172.16.0.2/32",
 			"'$publicKey2'"
